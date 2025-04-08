@@ -39,12 +39,24 @@ h1 {
 ul {
     list-style: none;
     padding: 0;
+    margin:0 auto;
     max-height: 300px;
-    overflow-y: auto;
-    margin-bottom: 20px;
+    overflow-y: scroll;
     background: rgba(50, 50, 50, 0.8);
     border: 1px solid #ff4500;
     border-radius: 5px;
+    width: 100%;
+}
+
+/* Ocultar barra de rolagem no Webkit (Chrome, Edge, Safari) */
+ul::-webkit-scrollbar {
+    width: 0; /* Define a largura da barra como 0 (esconde a barra) */
+    height: 0; /* Esconde a barra horizontal, se necessário */
+}
+
+/* Opcional: Adicione um efeito suave ao rolar */
+ul {
+    scroll-behavior: smooth;
 }
 
 li {
