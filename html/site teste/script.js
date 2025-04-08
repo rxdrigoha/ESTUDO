@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const rankingList = [
+    const rankingListKey = 'quakeLiveRankingList';
+    
+    let rankingList = JSON.parse(localStorage.getItem(rankingListKey)) || [
         "TYLER (I DIDNT LAST 10 SECONDS)",
         "Nyx",
         "dark (humble)",
@@ -46,7 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const playerName = document.getElementById('player-name').value;
         const playerComment = document.getElementById('player-comment').value;
-        rankingList.push(`${playerName} (${playerComment})`);
+        const playerRank = parseInt(document.getElementById('player-rank').value, 10) - 1;
+
+        rankingList.splice(playerRank, 0, `${playerName} (${playerComment})`);
+        localStorage.setItem(rankingListKey, JSON.stringify(rankingList));
         renderRanking();
         document.getElementById('add-player-form').reset();
     });
