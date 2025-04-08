@@ -1,78 +1,103 @@
+@charset "UTF-8"
+
+/* Importar fontes futuristas */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 'Orbitron', Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    color: #fff;
+    min-height: 100vh;
 }
 
+/* Container Principal */
 .container {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(25, 25, 25, 0.9);
+    border: 2px solid #ff4500; /* Cor laranja do Quake Live */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.6);
+    padding: 20px;
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     text-align: center;
 }
 
+/* Título Principal */
 h1 {
+    color: #ff4500;
+    text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347;
     margin-bottom: 20px;
-    font-size: 24px;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 3em;
 }
 
+/* Lista de Ranking */
 ul {
     list-style: none;
     padding: 0;
     max-height: 300px;
     overflow-y: auto;
     margin-bottom: 20px;
+    background: rgba(50, 50, 50, 0.8);
+    border: 1px solid #ff4500;
+    border-radius: 5px;
 }
 
 li {
     margin: 10px 0;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 69, 0, 0.1);
     border-radius: 5px;
+    border: 1px solid #ff4500;
     transition: all 0.3s ease;
+    color: #ffffff;
 }
 
 li:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.02);
+    background: rgba(255, 69, 0, 0.3);
+    transform: scale(1.05);
 }
 
+/* Formulário */
 form {
     margin-top: 20px;
 }
 
-input {
-    width: calc(100% - 20px);
+input, button {
+    width: 100%;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ff4500;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.9);
-    color: #333;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Orbitron', Arial, sans-serif;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff4500;
 }
 
 button {
-    padding: 10px 20px;
-    border: none;
-    background: #333;
-    color: #fff;
-    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 button:hover {
-    background: #555;
+    background: #ff4500;
+    color: #000000;
     transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #666666;
 }
