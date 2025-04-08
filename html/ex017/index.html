@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes em CSS</title>
     <style>
-        body {font-family: 'Work Sans', Arial, Helvetica, sans-serif;/*Medidas Absolutas: cm, mm, in, px, pt, pc Medidas relativas: Em, ex, rem, vw, vh, %
-            
-            1EM = 16PX*/font-size: 1em ; font-weight: 0; font-style: oblique; text-decoration: underline;}
-            
-        h1 {/*shorthand font -font style -> font-weight -> font-size -> font-family*/
-    font: italic bold 3em 'Work sans', sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-        h2 {font: lighter 2em 'Work sans', sans-serif;}
+body {
+    font-family: 'Underdog', Arial, Helvetica, sans-serif; /* Medidas Absolutas: cm, mm, in, px, pt, pc Medidas relativas: Em, ex, rem, vw, vh, % 1EM = 16PX */
+    font-size: 1em;
+    font-weight: 0;
+    font-style: oblique;
+}
 
-        p {font: oblique normal 1em 'Work sans', Arial, sans-serif;}
+h1 {
+    /* shorthand font - font style -> font-weight -> font-size -> font-family */
+    font: italic bold 3em 'Underdog', sans-serif;
+}
+
+h2 {
+    font: normal 2em 'Underdog', sans-serif;
+}
+
+p {
+    font: oblique normal 1em 'Work Sans', Arial, sans-serif;
+}
     </style>
 </head>
 <body>
