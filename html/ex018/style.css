@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-body {background-color: rgb(205, 255, 203);font-family: Arial, Helvetica, sans-serif;}
-h1  {color: rgb(4, 109, 0);}
-h1#principal {text-align: center;font-size: 3em;}
-h2  {color: rgb(51, 77, 49);}
+body {background-color: #E7ECEF;font-family: Arial, Helvetica, sans-serif;}
+h1  {color: #69353F;}
+h1#principal {text-align: center;font-size: 3em; background-color: #FFD400; margin: 0 auto; width: fit-content;}
+h2  {color: #9D79BC;}  
 
 /*em html eh ID = CSS #
   em HTML eh clas = CSS .*/
