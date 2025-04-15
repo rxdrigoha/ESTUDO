@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+header {background-image:linear-gradient(to bottom,#036e33, #1B3022 ); color: white; padding: 3px; height: auto;}
+
+h1#tituloheader {text-align: center;}
+
+nav > a {text-decoration: none; color: white; padding: 5px; font: normal 0.7em Arial, Helvetica, sans-serif;}
+nav > a:hover {color: #B28B84;}
+p#pheader {text-align: center;}
