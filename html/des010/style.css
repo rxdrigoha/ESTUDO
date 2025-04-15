@@ -2,14 +2,28 @@
 
 @font-face {
     font-family: 'idroid';
-    src: url('fontes/idroid.otf') format('opentype')
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
 }
 
+body {background-color: #C0F8D1;}
 header {background-image:linear-gradient(to bottom,#036e33, #1B3022 ); color: white; padding: 5px; height: auto; width: 100%; top:0; left:0; right:0; position:fixed}
 
-#tituloheader {text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+#tituloheader {text-align: center; font-family:Georgia, Times, 'Times New Roman', serif}
 
 nav > a {text-decoration: none; color: white; padding: 5px; font: normal 0.7em Arial, Helvetica, sans-serif;}
 nav > a:hover {color: #B28B84;}
 #pheader {text-align: center;}
+
+main {background-color: white; width: 900px; height: auto;
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.37);
+padding: 10px; margin: 160px auto}
+
+#titulomain {margin-top: 10px; margin-left: 5px; font: bold 1.7em 'idroid', Georgia, Times, 'Times New Roman', serif; color: #058C42;}
+
+.pmain {text-indent: 30px; margin-left: 2px;}
+
+.h2main {font: bold 1.5em 'idroid', Georgia, Times, 'Times New Roman', serif; color:#058C42 ;}
+
+
 
