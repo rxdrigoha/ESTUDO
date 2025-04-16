@@ -35,6 +35,8 @@ span > a:hover {color: #00ff4c;}
 #imagemirina {display:flex;
 justify-content: center; align-items: center;}
 
-#bugdroid {display: flex; justify-content: center;}
+#bugdroid {display: flex; justify-content: center;align-items: center;}
+
+div {background-color: #1B3022; display: flex; justify-content: center; align-items: center; padding: 10px;}
 
 
