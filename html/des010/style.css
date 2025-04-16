@@ -15,7 +15,7 @@ nav > a {text-decoration: none; color: white; padding: 5px; font: normal 0.7em A
 nav > a:hover {color: #B28B84;}
 #pheader {text-align: center;}
 
-main {background-color: white; width: 900px; height: auto;
+main {background-color: white; width: 850px; height: auto;
 box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.37);
 padding: 10px; margin: 160px auto}
 
@@ -23,7 +23,18 @@ padding: 10px; margin: 160px auto}
 
 .pmain {text-indent: 30px; margin-left: 2px;}
 
-.h2main {font: bold 1.5em 'idroid', Georgia, Times, 'Times New Roman', serif; color:#058C42 ;}
+.h2main {font: bold 1.5em 'idroid', Georgia, Times, 'Times New Roman', serif; color:#058C42 ;background-color: #C0F8D1;}
 
+span {color:#058C42}
+
+#legendafotodandroid {text-align: center;}
+
+span > a {text-decoration: none; color:#036e33}
+span > a:hover {color: #00ff4c;}
+
+#imagemirina {display:flex;
+justify-content: center; align-items: center;}
+
+#bugdroid {display: flex; justify-content: center;}
 
 
