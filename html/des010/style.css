@@ -40,4 +40,12 @@ justify-content: center; align-items: center;}
 div {background-color: #1B3022; display: flex; justify-content: center; align-items: center; padding: 10px;}
 
 
-#last {display:block; background-color: #109e50; color: white; margin: auto;border-radius: 10px 10px 0px 0px; max-width: 800px;}
+#titulo3 {display:block; background-color: #109e50; color: white; margin: 10px auto 0px auto;border-radius: 10px 10px 0px 0px; max-width: 800px; height: auto;}
+
+h3 {margin: 0px}
+
+#lastdiv {display: block; background-color: #8cd6ad; height: auto; margin: auto; max-width: 800px;}
+
+#lastp {text-indent: 30px; font: normal 1.0em Arial, sans-serif; margin: 5px auto;}
+
+
