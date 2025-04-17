@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const rankingListKey = 'quakeLiveRankingList';
-    
+
     let rankingList = JSON.parse(localStorage.getItem(rankingListKey)) || [
         "TYLER (I DIDNT LAST 10 SECONDS)",
         "Nyx",
@@ -11,26 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "ts (merda ele pegou meu dodge)",
         "ploob (aura farmer)",
         "apt",
-        "Saccade",
-        "ham",
-        "X_PANIC",
-        "flanker",
-        "hideki (aposentado)",
-        "avens",
-        "51",
-        "lasz",
-        "postkade",
-        "lucky",
-        "gliss",
-        "skinner",
-        "takato",
-        "osnanezi",
-        "cesi",
-        "heit",
-        "Jockey",
-        "woof",
-        "Cloister",
-        "Nora Kitty"
+        "Saccade"
     ];
 
     const rankingListElement = document.getElementById('ranking-list');
@@ -39,7 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
         rankingListElement.innerHTML = '';
         rankingList.forEach((player, index) => {
             const li = document.createElement('li');
-            li.textContent = `${index + 1} - ${player}`;
+            li.innerHTML = `
+                ${index + 1} - ${player}
+                <button class="remove-btn" data-index="${index}">Remover</button>
+            `;
             rankingListElement.appendChild(li);
         });
     }
@@ -54,6 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem(rankingListKey, JSON.stringify(rankingList));
         renderRanking();
         document.getElementById('add-player-form').reset();
+    });
+
+    rankingListElement.addEventListener('click', (e) => {
+        if (e.target.classList.contains('remove-btn')) {
+            const index = e.target.getAttribute('data-index');
+            rankingList.splice(index, 1);
+            localStorage.setItem(rankingListKey, JSON.stringify(rankingList));
+            renderRanking();
+        }
     });
 
     renderRanking();

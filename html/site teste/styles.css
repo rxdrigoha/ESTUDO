@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* Importar fontes futuristas */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');     
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 body {
     font-family: 'Orbitron', Arial, sans-serif;
@@ -23,7 +23,7 @@ body {
     box-shadow: 0 0 20px rgba(255, 69, 0, 0.6);
     padding: 20px;
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     text-align: center;
 }
 
@@ -32,16 +32,16 @@ h1 {
     color: #ff4500;
     text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347;
     margin-bottom: 20px;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 /* Lista de Ranking */
 ul {
     list-style: none;
     padding: 0;
-    margin:0 auto;
+    margin: 0 auto;
     max-height: 300px;
-    overflow-y: scroll;
+    overflow-y: auto;
     background: rgba(50, 50, 50, 0.8);
     border: 1px solid #ff4500;
     border-radius: 5px;
@@ -50,28 +50,55 @@ ul {
 
 /* Ocultar barra de rolagem no Webkit (Chrome, Edge, Safari) */
 ul::-webkit-scrollbar {
-    width: 0; /* Define a largura da barra como 0 (esconde a barra) */
-    height: 0; /* Esconde a barra horizontal, se necessário */
+    width: 0;
+    height: 0;
 }
 
-/* Opcional: Adicione um efeito suave ao rolar */
-ul {
-    scroll-behavior: smooth;
-}
-
+/* Itens da Lista */
 li {
-    margin: 10px 0;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 10px;
     background: rgba(255, 69, 0, 0.1);
     border-radius: 5px;
+    font-size: 0.9em;
+    color: #ffffff;
     border: 1px solid #ff4500;
     transition: all 0.3s ease;
-    color: #ffffff;
+    position: relative; /* Necessário para posicionar o botão */
 }
 
 li:hover {
     background: rgba(255, 69, 0, 0.3);
-    transform: scale(1.05);
+    transform: scale(1.02);
+}
+
+/* Botão Remover - Inicialmente invisível */
+.remove-btn {
+    background: #ff4500;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 8px; /* Botão menor */
+    cursor: pointer;
+    font-size: 0.7em; /* Fonte menor */
+    transition: all 0.3s ease;
+    display: none; /* Ocultar por padrão */
+    position: absolute; /* Para posicionar dentro do elemento */
+    right: 10px; /* Distância da borda direita */
+}
+
+/* Mostrar botão ao passar o mouse */
+li:hover .remove-btn {
+    display: block; /* Torna o botão visível */
+}
+
+/* Efeito ao passar o mouse no botão */
+.remove-btn:hover {
+    background: #ff6347;
+    transform: scale(1.1);
 }
 
 /* Formulário */
@@ -82,13 +109,13 @@ form {
 input, button {
     width: 100%;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #ff4500;
     border-radius: 5px;
     background: #1a1a1a;
     color: #ffffff;
     font-family: 'Orbitron', Arial, sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 input:focus {
