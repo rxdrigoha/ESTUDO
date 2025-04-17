@@ -7,7 +7,7 @@
 }
 
 body {background-color: #C0F8D1;}
-header {background-image:linear-gradient(to bottom,#036e33, #1B3022 ); color: white; padding: 5px; height: auto; width: 100%; top:0; left:0; right:0; position:fixed}
+header {background-image:linear-gradient(to bottom,#036e33, #1B3022 ); color: white; padding: 5px; height: auto; max-width: 100%; top:0; left:0; right:0;}
 
 #tituloheader {text-align: center; font-family:Georgia, Times, 'Times New Roman', serif}
 
@@ -15,9 +15,9 @@ nav > a {text-decoration: none; color: white; padding: 5px; font: normal 0.7em A
 nav > a:hover {color: #B28B84;}
 #pheader {text-align: center;}
 
-main {background-color: white; width: 850px; height: auto;
+main {background-color: white; max-width: 850px; height: auto;
 box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.37);
-padding: 10px; margin: 160px auto}
+padding: 10px; margin: 0px auto}
 
 #titulomain {margin-top: 10px; margin-left: 5px; font: bold 1.7em 'idroid', Georgia, Times, 'Times New Roman', serif; color: #058C42;}
 
@@ -44,10 +44,26 @@ div {background-color: #1B3022; display: flex; justify-content: center; align-it
 
 h3 {margin: 0px}
 
-#lastdiv {display: block; background-color: #8cd6ad; height: auto; margin: auto; max-width: 800px;}
+#lastdiv {display: block; background-color: #bae9cf; height: auto; margin: auto; max-width: 800px; border-radius: 0px 0px 10px 10px;}
 
 #lastp {text-indent: 30px; font: normal 1.0em Arial, sans-serif; margin: 5px auto;}
 
-ul {list-style-type:"\2713"; padding: 10px}
+#ul1 {list-style-type:"\2713"; 
+    padding: 10px;
+    margin: 0 auto; /* Center the list */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Add space between columns */
+    max-width: 800px; /* Set a maximum width for the list */}
+ul li {
+    flex: 0 0 45%; /* Each item takes up 45% of the width (two columns) */
+    margin-bottom: 10px; /* Add spacing between rows */
+    position: relative; /* Allow positioning of the checkmark */
+    padding-left: 5px; /* Add space for the checkmark */
+}
+
+footer {background-color: #036e33; color: white; text-align: center; padding: 10px; width: 550; margin: 10px auto;}
+
+#pfooter {text-align: center; margin: 0px;}
 
 
