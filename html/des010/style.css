@@ -11,7 +11,7 @@ header {background-image:linear-gradient(to bottom,#036e33, #1B3022 ); color: wh
 
 #tituloheader {text-align: center; font-family:Georgia, Times, 'Times New Roman', serif}
 
-nav > a {text-decoration: none; color: white; padding: 5px; font: normal 0.7em Arial, Helvetica, sans-serif;}
+nav > a {text-decoration: none; color: white; padding: 5px; font: normal 0.7em Arial, Helvetica, sans-serif;transition: color 1s;}
 nav > a:hover {color: #B28B84;}
 #pheader {text-align: center;}
 
@@ -23,7 +23,9 @@ padding: 10px; margin: 0px auto}
 
 .pmain {text-indent: 30px; margin-left: 2px;}
 
-.h2main {font: bold 1.5em 'idroid', Georgia, Times, 'Times New Roman', serif; color:#058C42 ;background-color: #C0F8D1;}
+.h2main {font: bold 1.5em 'idroid', Georgia, Times, 'Times New Roman', serif; color:#058C42 ;background-color: #C0F8D1; transition:background-color 1s;}
+
+.h2main:hover {background-color: #00ff4c;}
 
 span {color:#058C42}
 
