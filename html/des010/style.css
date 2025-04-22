@@ -6,6 +6,10 @@
     font-weight: normal;
 }
 
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
 body {background-color: #C0F8D1;}
 header {background-image:linear-gradient(to bottom,#036e33, #1B3022 ); color: white; padding: 5px; height: auto; max-width: 100%; top:0; left:0; right:0;}
 
