@@ -16,7 +16,7 @@ header {background-image:linear-gradient(to bottom,#036e33, #1B3022 ); color: wh
 #tituloheader {text-align: center; font-family:Georgia, Times, 'Times New Roman', serif}
 
 nav > a {text-decoration: none; color: white; padding: 5px; font: normal 0.7em Arial, Helvetica, sans-serif;transition: color 1s; transition: background-color 0.5s;}
-nav > a:hover {color: #B28B84; background-color: #73af8588; padding: 10px;}
+nav > a:hover {color: #B28B84; background-color: #73af8588; padding: 9px;}
 #pheader {text-align: center;}
 
 main {background-color: white; max-width: 850px; height: auto;
@@ -76,4 +76,7 @@ footer {background-color: #036e33; color: white; text-align: center; padding: 10
 
 #imagemandroid {display:flex;
     justify-content: center; align-items: center;}
+
+
+p {margin: 10px 0px; text-align: justify;}
 
