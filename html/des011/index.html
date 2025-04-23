@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {background-image: url(imagens/espaco.jpg); max-width: 800px;}
-        img {margin: auto}
+        body {background-image: url(imagens/espaco.jpg); background-repeat: no-repeat;background-size: cover; background-position: center; background-attachment: fixed;}
+        img {display: block;margin: auto; width: 50%;}
+        div {display: flex; justify-content: center; align-items: center; height: 50%;}
+
     </style>
 </head>
 <body>
-    <img src="imagens/astronauta.png" alt="astronauta">
+    <div>
+        <img src="imagens/astronauta.png" alt="astronauta">
+    </div>
 </body>
 </html>
