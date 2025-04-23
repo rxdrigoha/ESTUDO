@@ -21,7 +21,7 @@ nav > a:hover {color: #B28B84;}
 
 main {background-color: white; max-width: 850px; height: auto;
 box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.37);
-padding: 10px; margin: 0px auto}
+padding: 10px; margin: auto}
 
 #titulomain {margin-top: 10px; margin-left: 5px; font: bold 1.7em 'idroid', Georgia, Times, 'Times New Roman', serif; color: #058C42;}
 
@@ -72,4 +72,8 @@ footer {background-color: #036e33; color: white; text-align: center; padding: 10
 
 #pfooter {text-align: center; margin: 0px;}
 
+* {margin: 0px; padding: 0px;}
+
+#imagemandroid {display:flex;
+    justify-content: center; align-items: center;}
 
