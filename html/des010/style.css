@@ -56,17 +56,16 @@ h3 {margin: 0px}
 
 #ul1 {list-style-type:"\2713"; 
     padding: 10px;
-    margin: 0 auto; /* Center the list */
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap to the next row */
-    justify-content: space-between; /* Add space between columns */
-    max-width: 800px; /* Set a maximum width for the list */}
+    margin: 0 auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 800px; }
 ul li {
-    flex: 0 0 45%; /* Each item takes up 45% of the width (two columns) */
-    margin-bottom: 10px; /* Add spacing between rows */
-    position: relative; /* Allow positioning of the checkmark */
-    padding-left: 5px; /* Add space for the checkmark */
-}
+    flex: 0 0 45%; 
+    margin-bottom: 10px; 
+    position: relative;
+    padding-left: 5px; }
 
 footer {background-color: #036e33; color: white; text-align: center; padding: 10px; width: 550; margin: 10px auto;}
 

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/* Importar fontes futuristas */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 body {
@@ -15,7 +14,6 @@ body {
     min-height: 100vh;
 }
 
-/* Container Principal */
 .container {
     background: rgba(25, 25, 25, 0.9);
     border: 2px solid #ff4500; /* Cor laranja do Quake Live */
@@ -27,7 +25,7 @@ body {
     text-align: center;
 }
 
-/* Título Principal */
+
 h1 {
     color: #ff4500;
     text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347;
@@ -35,7 +33,7 @@ h1 {
     font-size: 2.5em;
 }
 
-/* Lista de Ranking */
+
 ul {
     list-style: none;
     padding: 0;
@@ -48,13 +46,13 @@ ul {
     width: 100%;
 }
 
-/* Ocultar barra de rolagem no Webkit (Chrome, Edge, Safari) */
+
 ul::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
 
-/* Itens da Lista */
+
 li {
     display: flex;
     justify-content: space-between;
@@ -67,7 +65,7 @@ li {
     color: #ffffff;
     border: 1px solid #ff4500;
     transition: all 0.3s ease;
-    position: relative; /* Necessário para posicionar o botão */
+    position: relative; 
 }
 
 li:hover {
@@ -75,33 +73,33 @@ li:hover {
     transform: scale(1.02);
 }
 
-/* Botão Remover - Inicialmente invisível */
+
 .remove-btn {
     background: #ff4500;
     color: #ffffff;
     border: none;
     border-radius: 3px;
-    padding: 3px 8px; /* Botão menor */
+    padding: 3px 8px; 
     cursor: pointer;
-    font-size: 0.7em; /* Fonte menor */
+    font-size: 0.7em; 
     transition: all 0.3s ease;
-    display: none; /* Ocultar por padrão */
-    position: absolute; /* Para posicionar dentro do elemento */
-    right: 10px; /* Distância da borda direita */
+    display: none; 
+    position: absolute; 
+    right: 10px; 
 }
 
-/* Mostrar botão ao passar o mouse */
+
 li:hover .remove-btn {
-    display: block; /* Torna o botão visível */
+    display: block; 
 }
 
-/* Efeito ao passar o mouse no botão */
+
 .remove-btn:hover {
     background: #ff6347;
     transform: scale(1.1);
 }
 
-/* Formulário */
+
 form {
     margin-top: 20px;
 }
@@ -134,7 +132,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Rodapé */
+
 footer {
     margin-top: 20px;
     font-size: 0.8em;
