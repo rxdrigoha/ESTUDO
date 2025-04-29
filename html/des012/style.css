@@ -21,16 +21,16 @@ header > p > a:hover {color: #418aca;}
 
 span {font-family: Arial, Helvetica, sans-serif; font-weight: 400;}
 
-section{padding-top: 10vh;padding-bottom: 10vh; line-height: 2em;}
+section{padding-top: 10vh;padding-bottom: 10vh; line-height: 2em; font-size: 2vw;}
 
 section > p {padding-bottom: 0px;}
 
 .noimage {font-family: var(--cordelfonte);font-weight: 600; padding: 10px; padding-left: 30px;}
-#img1 {background-image: url(pacote-d012/imagens/background001.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;background-position: right center;}
+#img1 {background-image: url(pacote-d012/imagens/background001.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;background-position: right center;height: 400px;display: flex;justify-content: flex-start;align-items: center;}
 
 .image {font-family: var(--cordelfonte);padding: 10px;font-weight: 500; color: white; background-color: rgba(0, 0, 0, 0.384); width: fit-content; padding: 10px; padding-left: 30px;}
 
-#img2 {background-image: url(pacote-d012/imagens/background002.jpg); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;background-position: right center;}
+#img2 {background-image: url(pacote-d012/imagens/background002.jpg); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;background-position: right center; height: 400px;display: flex;justify-content: flex-start;align-items: center;}
 
 footer {background-color: black; text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; padding: 5px; font-size: 0.9em;}
 footer > p > a {color: white; text-decoration: none;transition: color 1s;}
