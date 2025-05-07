@@ -9,11 +9,19 @@
         table {width: 500px; border-collapse: collapse;}
         caption {font-size: 1.3em; font-weight: bolder;}
         th, td {border: 1px solid black; padding: 8px;}
+        .cnome {background-color: green;}
+        .csexo, .cidade {background-color: crimson;}
     </style>
 </head>
 <body>
     <h1>Exercicio de Tabelas</h1>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
